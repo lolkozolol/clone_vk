@@ -1,0 +1,545 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+}
+
+body{
+	width: 100%;
+	background: #EDEEF0;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+	position: fixed;
+	background: #FFFFFF;
+}
+
+main{
+	width: 990px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+.container{
+	width: 990px;
+	margin: 0px auto;
+}
+
+.header{
+	width: 100%;
+	height: 48px;
+	display: flex;
+	align-items: center;
+}
+
+
+.logo{
+	float: left;
+	width: 180px;
+	height: 48px;
+	background: url('../img/vk_scr_logo.jpg') no-repeat;
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	cursor: pointer;
+}
+
+.logo:active{
+	background-position: 0px 5px;
+}
+
+.search{
+	display: flex;
+
+}
+
+.search> input{
+	padding: 6px 30px;
+	border: none;
+	border-radius: 8px;
+	background: #EDEEF0;
+	font-size: 100%;
+	color: #B3B9CE;
+	position: relative;
+	
+}
+
+i{
+	position: absolute;
+	margin: 7px;
+	opacity: .1;
+	box-sizing: border-box;
+}
+
+.header_item{
+	width: 438px; /*Отсуп между поиском и свич инглиш*/
+	height: 48px; 
+
+}
+
+.switchEng{
+	display: inline-block;
+	align-items: flex-end;
+	font-size: 12.5px;
+	font-weight: bold;
+	color: #000;
+	padding: 16px 8px;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+.switchEng:hover{
+		background: ##EDEEF0;
+	color: red;
+	text-decoration: none;
+}
+
+
+.content{
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.right-content{
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 720px;
+	align-items: flex-end;
+	
+}
+.login{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	width: 320px;
+	height: 190px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 1px 3px 5px -1px #e8e8e8;
+	
+}
+
+
+
+.login-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 270px;
+	height: 140px;
+	
+}
+
+.login-content> input{
+
+	width: 270px;
+	height: 35px;
+	font-size: 14px;
+	border: 1px solid #D3D9DE;
+	border-radius: 4px;
+	background: #fff;
+	color: #828282;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.XXX{
+	display: flex;
+	align-content: space-between
+}
+
+.login-knopki{
+	display: flex;
+	align-content: space-between;
+}
+
+.voyti{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	width: 100px; 
+	height: 35px;
+	/*adding: 5px;*/
+	background: #5181B8;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+
+}
+
+.zabyl-password{
+	display: flex;
+	align-items: center;
+	
+  	justify-content: center;
+	font-size: 13px;
+	width: 142px; 
+	height: 35px;
+	color: #5181B8;
+	text-decoration: none;
+
+}
+
+/*ПОЛЯ РЕГИСТРАЦИИ НА САЙТЕ*/
+.registr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 320px;
+	height: 370px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 1px 3px 5px -1px #e8e8e8;
+}
+
+.registr-content{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 270px; 
+	height: 330px;
+	/*background: yellow;*/
+}
+
+.textbox{
+	width: 270px; 
+	height: 45px;
+	/*background: green;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 12px;
+}
+
+.registr-input{
+	width: 270px;
+	height: 88px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.registr-input> input{
+
+	width: 270px;
+	height: 35px;
+	font-size: 14px;
+	border: 1px solid #D3D9DE;
+	border-radius: 4px;
+	background: #fff;
+	color: #828282;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.agetext{
+	width: 125px;
+	height: 24px;
+	font-size: 14px;
+	color: #828282;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	/*background: red;*/
+}
+
+.age-data{
+	width: 270px;
+	height: 35px;
+	/*background: blue;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.age-data p{
+	font-size: 14px;
+	border: 1px solid #D3D9DE;
+	border-radius: 4px;
+	background: #fff;
+	color: #828282;
+	padding-left: 10px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.age-data p:nth-child(1){
+	width: 73px;
+	height: 35px;
+	
+}
+.age-data p:nth-child(2){
+	width: 98px;
+	height: 35px;
+}
+.age-data p:nth-child(3){
+	width: 73px;
+	height: 35px;
+}
+
+.login-registr{
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: space-between;
+	width: 270px;
+	height: 92px;
+	font-size: 14px;
+	font-weight: bold;
+	
+	
+}
+
+.prodol-registr{
+  	width: 270px; 
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #4BB34B;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.voyti-facebook{
+	width: 270px; 
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #1B6DD1;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+/*Логин контент*/
+.vk-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 320px;
+	height: 104px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 1px 3px 5px -1px #e8e8e8;
+}
+
+.vk-content-box{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 250px; 
+	height: 50px;
+	color: #ababab;
+	text-align: center;
+	
+
+}
+
+.vk-content-box p{
+	font-weight: bold;
+}
+
+.yznat{
+	font-size: 13px;
+	color: #2F67A9;
+	text-decoration: none;
+}
+
+
+/*.PHONECONTENT{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 540px; 
+	height: 603px;
+	background: yellow;
+}*/
+
+.photophone{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 540px;
+	height: 584px;
+	/*background: red;*/
+	margin-top: 12px;
+}
+
+.VKMOB{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 8px;
+	width: 540px;
+	height: 26px;
+	/*background: yellow;*/
+}
+
+.VKMOBTEXT{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 540px;
+	height: 40px;
+	/*font-size: 20px;*/
+	/*background: green;*/
+	text-align: center;
+	/*font-weight: bold;*/
+	color: #ababab;
+}
+
+.VKMOBTEXT p{
+	font-size: 14px;
+}
+
+.VKMOBPHOTO{
+	display: flex;
+	width: 346px;
+	height: 392px;
+	padding-top: 32px;
+	/*border: 1px solid blue;*/
+	/*background: blue;*/
+}
+
+
+.left-photo{
+	position: absolute;
+  	top: 23.5%;
+  	right: 53.6%;
+	width: 198px;
+	height: 442px;
+	background: url('../img/reg_iphone_ru.png') no-repeat;
+}
+
+
+
+.right-photo{
+	position: relative;
+	width: 183px;
+	height: 442px;
+	background: url('../img/reg_android_ru.png') no-repeat;
+}
+
+.ANDROIDIOS{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 346px;
+	height: 16px;
+	padding: 7px 0px 8px;
+	/*background: yellow;*/
+	font-size: 13px;
+	margin-top: 10px;*
+}
+
+.ANDROID{
+	width: 110.2px;
+	height: 16px;
+	/*background: green;
+	/*margin-top: 16px*/
+	padding: 7px 16px 8px;
+	text-align: center;
+}
+
+.ANDROIDIOS a{
+	  text-decoration: none;
+	  color: #5181B8;
+}
+
+.IOS{
+	width: 104.1px;
+	height: 16px;
+	/*background: green;*/
+	text-align: center;
+	padding: 7px 16px 8px;
+}
+
+.all-product{
+	text-align: center;
+	width: 199.9px;
+	height: 15px;
+	margin-top: 25px;
+	font-size: 13px;
+	/*background: green*/
+}
+.all-product a{
+	text-decoration: none;
+	 color: #5181B8;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+
+.container2{
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+	height: 22px;
+	padding: 24px 0 35px;
+	margin-top: 40px;
+	font-size: 13px;
+	border-top: 1px solid #5181B8;
+	text-decoration: none;
+	/*background: red;*/
+}
+
+.BOX1{
+	display: flex;
+	justify-content: space-between;
+	width: 154.35px;
+	height: 17.6px;
+	color: #5181B8;
+	/*background: green;*/
+}
+
+.BOX2{
+	display: flex;
+	justify-content: space-between;
+	width: 362.917px;
+	height: 17.6px;
+	color: #5181B8;
+	/*background: yellow;*/
+}
+
+.BOX3{
+	display: flex;
+	justify-content: space-between;
+	width: 355.283px;
+	height: 17.6px;
+	color: #5181B8;
+	/*background: black;*/
+}
